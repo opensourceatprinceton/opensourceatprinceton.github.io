@@ -2,6 +2,8 @@
 cd templates
 cd pages
 d=0;
+
+# grab all of the pages from the correct folder
 for file in *; do
 	if [[ -f $file ]]; then
         echo $file
@@ -16,15 +18,18 @@ done
 
 cd ..
 
-# check if a special layout file has been created
-
+# how should special layout files be named? (default: layout-pagename.whatever)
 layoutPrefix="layout-"
+
+# how should the default layout file be named? (default: layout.whatever)
+defaultLayout="layout"
 
 cd ..
 
 for (( j=0; j<d; j+=1 ))
 do
 	# check to see if a special layout file exists
+	# TODO: clean it up and make it more efficient (possibly with regex?)
 	cd templates
 
 	echo "$layoutPrefix${page_templates[j]}"
@@ -41,7 +46,7 @@ do
 			exist=1
 			layoutContent=$(cat $file)
 		fi
-		if [ "$filename" == "layout" ]
+		if [ "$filename" == "$defaultLayout" ]
 		then
 			defaultLayoutContent=$(cat $file)
 		fi
@@ -49,6 +54,7 @@ do
 
 	cd ..
 
+	# begin generating the output HTML file, with the same name as the templates
 	extension=".html"
 	outputName=${page_templates[j]}$extension
 	cat gen/master.hbs > $outputName
@@ -76,4 +82,3 @@ do
 	cat gen/scripts.hbs >> $outputName
 
 done
-# echo ${templates[0]} > file.txt
