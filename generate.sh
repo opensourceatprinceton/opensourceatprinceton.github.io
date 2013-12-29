@@ -20,8 +20,13 @@ cd ..
 
 layoutPrefix="layout-"
 
+cd ..
+
 for (( j=0; j<d; j+=1 ))
 do
+	# check to see if a special layout file exists
+	cd templates
+
 	echo "$layoutPrefix${page_templates[j]}"
 	layoutName=$layoutPrefix${page_templates[j]}
 
@@ -38,29 +43,15 @@ do
 		fi
 		if [ "$filename" == "layout" ]
 		then
-			exist=1
 			defaultLayoutContent=$(cat $file)
 		fi
 	done
-done
 
-cd ..
+	cd ..
 
-for (( j=0; j<d; j+=1 ))
-do
 	extension=".html"
 	outputName=${page_templates[j]}$extension
 	cat gen/master.hbs > $outputName
-
-	# generate layout files
-	for (( i=0; i<c; i+=1 ))
-	do
-		a='<script id="'
-		b='" type="text/x-handlebars-template">'
-		echo $a${layout_templates[i]}$b >> $outputName
-		echo "${layout_content[i]}" >> $outputName
-		echo '</script>' >> $outputName
-	done
 
 	#generate layout file
 
@@ -76,7 +67,6 @@ do
 		echo "$defaultLayoutContent" >> $outputName
 		echo '</script>' >> $outputName
 	fi
-
 
 	# generate page content files
 	echo '<script id="content" type="text/x-handlebars-template">' >> $outputName
