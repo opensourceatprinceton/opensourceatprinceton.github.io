@@ -1,20 +1,5 @@
 #!/bin/bash          
 cd templates
-c=0
-echo $PWD
-
-for file in *; do
-	if [[ -f $file ]]; then
-        echo $file
-
-        filename="${file%.*}"
-	    layout_templates[c]=$filename
-	    file_content=$(cat $file)
-	    layout_content[c]=$file_content
-	    let "c += 1"
-    fi
-done
-
 cd pages
 d=0;
 for file in *; do
@@ -30,6 +15,35 @@ for file in *; do
 done
 
 cd ..
+
+# check if a special layout file has been created
+
+layoutPrefix="layout-"
+
+for (( j=0; j<d; j+=1 ))
+do
+	echo "$layoutPrefix${page_templates[j]}"
+	layoutName=$layoutPrefix${page_templates[j]}
+
+	exist=0
+	layoutContent=""
+	defaultLayoutContent=""
+
+	for file in *; do
+		filename="${file%.*}"
+		if [ "$filename" == "$layoutName" ]
+		then
+			exist=1
+			layoutContent=$(cat $file)
+		fi
+		if [ "$filename" == "layout" ]
+		then
+			exist=1
+			defaultLayoutContent=$(cat $file)
+		fi
+	done
+done
+
 cd ..
 
 for (( j=0; j<d; j+=1 ))
@@ -47,6 +61,22 @@ do
 		echo "${layout_content[i]}" >> $outputName
 		echo '</script>' >> $outputName
 	done
+
+	#generate layout file
+
+	if [ "$exist" == 1 ] # if we have a specific layout file, use it!
+	then
+		echo "exist"
+		echo '<script id="layout" type="text/x-handlebars-template">' >> $outputName
+		echo "$layoutContent" >> $outputName
+		echo '</script>' >> $outputName
+	else # otherwise, use the default layout.whatever
+		echo "doesn't exist"
+		echo '<script id="layout" type="text/x-handlebars-template">' >> $outputName
+		echo "$defaultLayoutContent" >> $outputName
+		echo '</script>' >> $outputName
+	fi
+
 
 	# generate page content files
 	echo '<script id="content" type="text/x-handlebars-template">' >> $outputName
