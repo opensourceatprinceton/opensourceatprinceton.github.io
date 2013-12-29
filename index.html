@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/screen.css">
+        
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="page"></div>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/handlebars-v1.2.0.js"></script>
+
+        <script src="js/vendor/markdown.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+<script id="layout" type="text/x-handlebars-template">
+<!--HEADER-->
+<nav class="navbar navbar-topbar" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="container">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="index.html">Open Source at Princeton</a>
+	  </div>
+
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#">About</a></li>
+	      <li><a href="#">Programs</a></li>
+	      <li><a href="#">Opportunities</a></li>
+	      <li><a href="#">Sponsors</a></li>
+	    </ul>
+	  </div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+<div class="container" id="content-container">
+	{{content}}
+</div>
+
+<!--FOOTER-->
+<div class="container" id="footer">
+</div>
+</script>
+<script id="content" type="text/x-handlebars-template">
+# Welcome 
+
+This should now be **Markdown Supported**
+</script>
+
+        <script>
+            var page = $('#page');
+
+            var source   = $("#layout").html();
+            var template = Handlebars.compile(source);
+
+            console.log(new Handlebars.SafeString(marked($("#content").html())));
+
+            var context = {content: new Handlebars.SafeString(marked($("#content").html()))};
+            var html = template(context);
+
+            page.append(html);
+        </script>
+    </body>
+</html>

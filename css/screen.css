@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,700,400italic,700italic);
+
+/* global styles */
+
+body {
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 16px;
+
+	background-color:#EEEEEE;
+}
+
+p {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-weight: bold;
+}
+
+a {
+	color: #FF9900;
+}
+
+a:hover {
+	color: #AA4400;
+}
+
+/* header styles */
+
+.navbar-topbar
+{
+	background-color:#FF9900;
+	padding:16px;
+	font-size:24px;
+	font-weight:300;
+
+	border-radius:0;
+}
+
+.navbar a {
+	color:#000000;
+}
+
+.navbar-nav>li>a:hover {
+	background-color:none;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+	font-size:24px;
+	font-weight:bold;
+	color:#000000;
+	background-color:none;
+}
+
+.icon-bar {
+	background-color: #000000!important;
+}
+
+.navbar-toggle {
+	border: #000000 1px solid;
+}
+
+/* body styles */
+
+#content-container {
+	margin-top:32px;
+	margin-bottom:32px;
+	background-color:#FFFFFF;
+	padding:32px 64px;
+}
+
