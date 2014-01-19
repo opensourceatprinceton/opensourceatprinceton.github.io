@@ -1,0 +1,34 @@
+
+body {
+	font-family: $body-font-stack;
+	font-size: 16px;
+
+	background-color:#EEEEEE;
+}
+
+p {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $header-font-stack;
+	font-weight: bold;
+}
+
+a {
+	color: $color-logo;
+}
+
+a:hover {
+	color: darken($color-logo,10);
+}
+
+/* body styles */
+
+#main {
+	margin-top:32px;
+	margin-bottom:32px;
+	background-color:#FFFFFF;
+	padding:32px 64px;
+}

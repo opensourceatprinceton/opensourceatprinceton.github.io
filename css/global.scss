@@ -1,0 +1,12 @@
+
+/* Vendor Dependencies */
+@import "vendor/normalize";
+
+/* Authored Dependencies (colors, typography) */
+@import "globals/vars";
+@import "globals/style";
+
+/* Components (button styles, tabs, modals, etc.) */
+
+/* Sections (header, footer, etc.) */
+@import "sections/header";
