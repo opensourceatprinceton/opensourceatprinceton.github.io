@@ -16,6 +16,6 @@ If you really want to test and build this on your own, first make sure you've go
 
 and then clone this directory, cd your way into it, and run:
 
-	jekyll build
+	jekyll serve
 
-to build the site into a new `_site` folder, where all of the Markdown pages in the directory should turn into HTML files.
+to build the site, and run it on the local server. Server will run on port 4000, so go to `http://localhost:4000` to preview it.
