@@ -8,6 +8,8 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 
+encoding: utf-8
+
 future:      true
 lsi:         false
 pygments:    false
@@ -52,7 +54,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
-  
+
   coderay:
     coderay_wrap: div
     coderay_line_numbers: inline
