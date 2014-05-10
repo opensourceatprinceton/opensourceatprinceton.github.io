@@ -3,6 +3,8 @@ layout: post
 title: Open Source Comes to Princeton
 ---
 
+![](/img/open-source-comes-to-princeton/image00.jpg)
+
 On November 24, Open Source at Princeton helped run an Open Source Comes to Campus event with OpenHatch. (Warning: the word “open” will occur very often in this post.) [OpenHatch](http://openhatch.org/about/) is a [non-profit](http://openhatch.org/about/) dedicated to matching prospective free software contributors with communities, tools, and education. They provide online tools for new contributors and organize and support outreach events. Open Source Comes to Campus is a one-day workshop to teach the tools and culture of open source development and to help students make contributions to real projects. Groups at [21 schools](http://campus.openhatch.org/#pastevents) have run this event, including 10 women-in-CS organizations.
 
 We were super excited to run this event, and it seems that people were as excited to attend—we received 80 sign-ups, of which about 40 people showed up. Here’s how it went.
@@ -13,7 +15,7 @@ The workshop was held on a Sunday from 10 am to 5 pm. You can see the schedule [
 
 People seemed to really enjoy the activities First, OpenHatch found two cute bugs, accessible to beginners and documented in issue trackers. They were [“No December”](http://bit.ly/no-december) (that is, in a certain version of Android, the month December disappeared) and [“can’t print on Tuesdays.”](http://bit.ly/cant-print) Pairs of people looked at the bugs and tried to explain the causes to each other. I won’t spoil why they were happening—take a look at the handout [here](https://github.com/openhatch/open-source-comes-to-campus/blob/master/curriculum/handouts/Communications_Handout.pdf)!  
 
-![](https://lh5.googleusercontent.com/xYt_jIROU_k1kH8YqhF-_ElRSK_Vf2RRs0mJ9Wphwdxp6M04y7tWoiBg2p8c3UdR3LAXNbEwVTq2UbmqS0_9x84aK6fefBfuwLE5GtP1G7fYX2eTbCN7c0aY8qmLyTLblQ)
+![](/img/open-source-comes-to-princeton/image03.png)
 
 Attendees also really enjoyed the git mini projects. They worked in groups of five with one mentor each. They cloned a sample repo that was the Princeton page with quirky changes added in, made changes on their machines, made pull requests, and got them merged in. After the merge, they could refresh the page to see their changes. It was rewarding because of the instant and visual feedback. Here’s a [sample page](https://princeton-2.github.io/%20) and here are the [pull requests](https://github.com/princeton-2/princeton-2.github.io/pulls?direction=desc&page=1&sort=created&state=closed).
 
@@ -21,7 +23,7 @@ Attendees also really enjoyed the git mini projects. They worked in groups of fi
 
 The contributions workshop was designed to be the capstone of the workshop, where attendees would finally have the chance to make their own changes. In reality, there were mixed responses. Some attendees left early, whereas some attendees got really excited about their bugs and stayed for an hour after the workshop ended. 
 
-![](https://lh5.googleusercontent.com/bUCEFjuD2IKNd2kb_YIl-4TMNraivyuVaUJCQzIglpqn1wUyLnkVP6KmPN_BPiZLn62eYsHlUXq-zvwdAQki96lPO8Mq_EGT0IiIBroEqIN06lNyYNDs2G2vgFV8mRsKbA)
+![](/img/open-source-comes-to-princeton/image02.png)
 
 OpenHatch put together a great [First Tasks](https://openhatch.org/wiki/First_Tasks) page that listed welcoming bite-size issues for beginners to fix, including projects like Dreamwidth, WelcomeBot, the Open Science Collaboration Blog, and OpenHatch itself. We also had mentors familiar with projects like OpenStates, Debian, and MediaWiki. 
 
@@ -39,7 +41,7 @@ In response to the question “Please briefly describe your involvement in open 
 
 The majority of people used Macs, more than half were already comfortable using the command line, and freshmen and sophomores made up about 70% of the registrants.
 
-![](https://lh5.googleusercontent.com/P0Y3n8Te9H7RrDXfRN3Z3TCUz6guLCJotzdCnclC1QRxa7KK9eBUSCqVlqcGO32IeM2yVFH4v5jgJ1RpMIA3BDOERPkPXBbTlsJRwLpc6Rk18__Uo3wJ5PJlL076lvSGVQ)
+![](/img/open-source-comes-to-princeton/image01.png)
 
 ##Future directions
 
@@ -58,7 +60,7 @@ We’ll end with this encouraging exit survey response from an attendee:
 
 > “The skills you're introducing people to... no, the world you're introducing people to—it is so valuable for everybody that this world is nourished. And there is no better way to build the community around it than to pair people off with mentors who can give one-on-one attention to these future open source contributors.”
 
-![](https://lh6.googleusercontent.com/FhcL5OMKJjlTydiBtAMHKcUgGWEHcvJGUdzpK995xhS4OyMz1_OUl2hAZ0OeYca6nCceHe4ciWhFRqSOfxVHPJVxCW8RlccZxL-0GjSz6ZLH76NpYJMTqfMFV9v4OeU7aQ)
+![](/img/open-source-comes-to-princeton/image05.png)
 
 ## Thanks!
 
