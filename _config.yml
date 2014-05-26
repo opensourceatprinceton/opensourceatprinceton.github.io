@@ -13,7 +13,7 @@ encoding: utf-8
 future:      true
 lsi:         false
 pygments:    false
-markdown:    maruku
+markdown:    kramdown
 permalink:   pretty      
 #
 # https://github.com/mojombo/jekyll/wiki/Permalinks
