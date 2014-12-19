@@ -21,7 +21,11 @@ h1 {
 }
 
 h2 {
-	font-size: 1.6em;
+	font-size: 1.5em;
+}
+
+small {
+	font-weight: 300!important;
 }
 
 a {
@@ -32,17 +36,50 @@ a:hover {
 	color: darken($color-logo,10);
 }
 
+.container {
+	max-width: 960px;
+}
+
 /* body styles */
 
 #main {
 	margin-top:32px;
 	margin-bottom:32px;
 	background-color:#FFFFFF;
-	padding: 72px 128px;
+	padding: 72px 48px;
 
 	// max-width: 1024px;
 	
 	img {
 		max-width: 100%;
 	}
+}
+
+
+@media (min-width: 768px) {
+    .v-center {display:table!important;width:100%}
+
+    .v-center div[class*='col-'] {
+        display: table-cell!important;
+        vertical-align:middle;
+        float:none;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .v-center {
+        display:block;
+    }
+    .v-center div[class*='col-'] {
+        display: block;
+        float:none;
+
+        img {
+            width: 100%;
+        }
+    }
 }

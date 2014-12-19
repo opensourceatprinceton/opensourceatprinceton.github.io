@@ -11,7 +11,15 @@ We've partnered with ThoughtWorks to start a mentoring program for students to c
 
 # Want to get involved?
 
-Visit our [Calendar](calendar) to see upcoming meetings and events, and hit up the [Wiki](http://opensourceprinceton.wikidot.com/) for resources and information. Or, if you just want to catch up on what we've been up to, check out our blog:
+To join the Open Source at Princeton mailing list, send an email to opensourceprinceton@gmail.com. You'll hear about long-term project meetings, open source intro workshops, and corporate events.
+
+## Facebook Open Academy at Princeton
+
+If you're interested in working on open source projects like Wikimedia for Princeton course credit, you might like to apply for the Facebook Open Academy program. It's run by the CS department as a substitute for independent work, and you can email Sandra Batista (sbatista@cs.princeton.edu) for more details.
+
+## Resources
+
+Visit our [Calendar](calendar) to see upcoming meetings and events, and hit up the [Wiki](http://opensourceprinceton.wikidot.com/) for resources and information. 
 
 # Blog
 

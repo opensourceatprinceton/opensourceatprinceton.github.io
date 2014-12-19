@@ -1,19 +1,16 @@
 safe:        false
-auto:        false
-server:      false
-server_port: 4000
+port: 4000
 base-url:    /
 
 source:      .
 destination: ./_site
-plugins:     ./_plugins
 
 encoding: utf-8
 
 future:      true
 lsi:         false
-pygments:    false
-markdown:    maruku
+highlighter: pygments
+markdown:    kramdown
 permalink:   pretty      
 #
 # https://github.com/mojombo/jekyll/wiki/Permalinks
@@ -47,7 +44,8 @@ maruku:
 
 rdiscount:
   extensions: []
-
+sass:
+    sass_dir: css
 kramdown:
   auto_ids: true,
   footnote_nr: 1
@@ -62,5 +60,3 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: style
-
-exclude: config.rb
