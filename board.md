@@ -9,7 +9,9 @@ title: Open Source At Princeton - Board
 
 ## [Lisha Ruan]() <small>'17 // Co-President</small>
 
-## [Valerie Morin]() <small>'17 // Events Chair</small>
+## [Valerie Morin]() <small>'17 // Event Chair</small>
+
+## [Edgar Wang]() <small>'16 // Event Chair</small>
 
 ## [Catherine Wu]() <small>'17 // Publicity Chair</small>
 
