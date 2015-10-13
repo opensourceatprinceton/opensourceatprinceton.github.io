@@ -5,25 +5,21 @@ title: Open Source At Princeton - Board
 
 # Who we are:
 
-## [Katherine Ye](mailto:kye@princeton.edu) <small>'16 // Co-President</small>
+## [David Gilhooley](mailto:djg5@princeton.edu) <small> '17 // President </small>
 
-## [Lisha Ruan]() <small>'17 // Co-President</small>
+## [Kevin Bradicich](kjb3@princeton.edu) <small> '18 // Vice President </small>
+
+## [Kevin G. Boutarel](mailto:boutarel@princeton.edu) <small> Head Project Leader </small>
+
+## [Linhchi B. Nguyen](mailto:lbn@princeton.edu) <small> '18 // Corporate Outreach Chair </small>
 
 ## [Valerie Morin]() <small>'17 // Event Chair</small>
 
-## [Edgar Wang]() <small>'16 // Event Chair</small>
+## [Chan Chiem Saeteurn ](mailto:saeteurn@princeton.edu) <small> '17 Treasurer </small>
 
 ## [Catherine Wu]() <small>'17 // Publicity Chair</small>
 
 ## [Diana Liao]() <small>'17 // Tech Chair</small>
-
-## [Annie Chu]()  <small>'17 // Corporate Outreach Chair</small>
-
----
-
-## [Chris Hay]() <small>'17 // OpenMRS Project Lead
-
-## [Vibhaa Sivaraman]() <small>'17 // OpenMRS Project Lead
 
 ---
 
